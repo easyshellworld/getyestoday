@@ -1,0 +1,9 @@
+[[redirects]]
+    from="/*"
+    to="/new.html"
+    status=200
+
+[[headers]]
+    for="/*"
+    [headers.values]
+    Acces-Control-Allow-Origin="*"
