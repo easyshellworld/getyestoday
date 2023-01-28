@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+
+
+        <title>Yestoday</title>
+
+    <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var fox="USDCNY,EURCNY,EURUSD,USDJPY,NZDCNY";
+            document.write('<script type="text/javascript" src="http://qt.gtimg.cn/q='  +  fox + '" charset="UTF-8">');
+            
+            </script>
+            </script>
+    <script type="text/javascript">
+            foxarr=fox.split(",");   
+        for(var i=0;i<foxarr.length;i++){
+                 var str=eval("hq_str_" + foxarr[i]);
+                 var arr=str.split(",");
+                 document.write(foxarr[i] +":"+ arr[1] + "  ");
+        }
+ </script>
+`
+<div id="stock">
+    <script type="text/javascript">
+    var stock="sh000001,sz399001,usDJI,usIXIC";
+  
+    
+    
+    document.write('<script type="text/javascript" src="http://qt.gtimg.cn/q='+ stock +'" charset="UTF-8">');
+    
+    </script>
+    </script>
+    <script type="text/javascript">
+    
+    var namearry=stock.split(",");
+    for(var i=0;i<namearry.length;i++){
+    
+      var str=eval("v_" + namearry[i]);
+        var arr=str.split("~");
+    document.write( arr[1]+ ":" + arr[3] + '    ');
+    }
+    
+    </script>
+    
+    <!------------------------------------------------------------------------------->
+    `
+    
+    
+    
+    
+    
+    
+    
+    <!------------------------------------------------------------------------------->
+  	   
+        
+   
+    
+    </body>
+</html>
