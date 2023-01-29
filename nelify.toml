@@ -1,6 +1,6 @@
 [[redirects]]
     from="/*"
-    to="/new.html"
+    to="/index.html"
     status=200
 
 [[headers]]
