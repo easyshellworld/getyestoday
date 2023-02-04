@@ -1,6 +1,6 @@
 [[redirects]]
-    from="/*"
-    to="/index.html"
+    from="http://app.mytoken.io/"
+    to="https://getyestoday.netlify.app"
     status=200
 
 [[headers]]
