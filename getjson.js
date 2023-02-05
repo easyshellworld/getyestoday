@@ -19,6 +19,7 @@ $.getJSON(gettoday("btc"),function(result){
     
     $("#coin").html("btc:"+result.data.kline[1].close);
    console.log(result.data.kline[1].close)
+   console.log(result)
 });
 
 });
