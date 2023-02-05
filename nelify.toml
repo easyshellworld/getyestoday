@@ -1,5 +1,5 @@
 [[redirects]]
-     from = "/api/currency/"
+     from = "/currency/"
      to = "https://api.mytokenapi.com/currency/"
      status = 200
      force = true # COMMENT: ensure that we always redirect
