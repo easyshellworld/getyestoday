@@ -1,7 +1,9 @@
 [[redirects]]
-    from="/*"
-    to="/index.html"
-    status=200
+     from = "/api*"
+     to = "https://api.mytokenapi.com/"
+     status = 200
+     force = true # COMMENT: ensure that we always redirect
+     headers = {X-From = "Netlify"}
 
 [[headers]]
     for="/*"
