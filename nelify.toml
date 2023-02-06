@@ -2,7 +2,7 @@
      from = "/currency/*"
      to = "https://api.mytokenapi.com/currency/:sqalt"
      status = 200
-     force = true # COMMENT: ensure that we always redirect
+    # force = true # COMMENT: ensure that we always redirect
     # headers = {X-From = "Netlify"}
 
 # [[headers]]
