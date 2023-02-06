@@ -2,7 +2,7 @@
 publish="public"
 [[redirects]]
      from = "/currency/*"
-     to = "https://api.mytokenapi.com/currency/:sqalt"
+     to = "https://api.mytokenapi.com/currency/:sqlat"
      status = 200
     # defaults to 302 
      force = true # COMMENT: ensure that we always redirect
