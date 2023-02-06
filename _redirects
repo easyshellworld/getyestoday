@@ -1,1 +1,2 @@
-/currency* https://api.mytokenapi.com/currency/:sqalt 200
+/currency/* https://api.mytokenapi.com/currency/:splat 200
+
