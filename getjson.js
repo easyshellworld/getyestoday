@@ -17,9 +17,16 @@ $(document).ready(function(){
    // let testdd=gettoday("btc");
 $.getJSON(gettoday("btc"),function(result){
     
-    $("#coin").html("btc:"+result.data.kline[1].close);
-   console.log(result.data.kline[1].close)
-   console.log(result)
+    $("#coin").append("btc:"+result.data.kline[1].close);
+  // console.log(result.data.kline[1].close)
+  // console.log(result)
+});
+
+$.getJSON(gettoday("eth"),function(result){
+    
+   $("#coin").append("  eth:"+result.data.kline[1].close);
+ // console.log(result.data.kline[1].close)
+ // console.log(result)
 });
 
 });
