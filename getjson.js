@@ -29,4 +29,10 @@ $.getJSON(gettoday("eth"),function(result){
  // console.log(result)
 });
 
+$.getJSON(gettoday("matic"),function(result){
+    
+  $("#coin").append("  matic:"+result.data.kline[1].close);
+// console.log(result.data.kline[1].close)
+// console.log(result)
+});
 });
