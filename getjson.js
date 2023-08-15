@@ -12,6 +12,14 @@ function gettoday(coinname){
     return test
   }
 
+function getfox(){
+  const foxurl='https://api.exchangerate-api.com/v4/latest/usd'
+  $.getJSON(foxurl,function(result){
+    $("#coin").append("  USDCNY:"+result.rates.CNY)
+    $("#coin").append("  USDEUR:"+result.rates.EUR)
+    $("#coin").append("  USDJPY:"+result.rates.JPY)
+  })
+}
 
 $(document).ready(function(){
    // let testdd=gettoday("btc");
@@ -35,4 +43,5 @@ $.getJSON(gettoday("matic665"),function(result){
 // console.log(result.data.kline[1].close)
 // console.log(result)
 });
+getfox();
 });
