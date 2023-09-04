@@ -13,11 +13,16 @@ function gettoday(coinname){
   }
 
 function getfox(){
-  const foxurl='https://api.exchangerate-api.com/v4/latest/usd'
-  $.getJSON(foxurl,function(result){
+  const foxurl='https://api.exchangerate-api.com/v4/latest/'
+  $.getJSON(foxurl+'usd',function(result){
     $("#coin").append("  USDCNY:"+result.rates.CNY)
-    $("#coin").append("  USDEUR:"+result.rates.EUR)
     $("#coin").append("  USDJPY:"+result.rates.JPY)
+  })
+  $.getJSON(foxurl+'eur',function(result){
+    $("#coin").append("  USDCNY:"+result.rates.USD)
+  })
+  $.getJSON(foxurl+'gbp',function(result){
+    $("#coin").append("  USDCNY:"+result.rates.JPY)
   })
 }
 
@@ -40,6 +45,34 @@ $.getJSON(gettoday("eth"),function(result){
 $.getJSON(gettoday("matic665"),function(result){
     
   $("#coin").append("  matic:"+result.data.kline[1].close);
+// console.log(result.data.kline[1].close)
+// console.log(result)
+});
+
+$.getJSON(gettoday("apt530"),function(result){
+    
+  $("#coin").append("  apt:"+result.data.kline[1].close);
+// console.log(result.data.kline[1].close)
+// console.log(result)
+});
+
+$.getJSON(gettoday("tron"),function(result){
+    
+  $("#coin").append("  trx:"+result.data.kline[1].close);
+// console.log(result.data.kline[1].close)
+// console.log(result)
+});
+
+$.getJSON(gettoday("solana"),function(result){
+    
+  $("#coin").append("  sol:"+result.data.kline[1].close);
+// console.log(result.data.kline[1].close)
+// console.log(result)
+});
+
+$.getJSON(gettoday("xlm"),function(result){
+    
+  $("#coin").append("  xlm:"+result.data.kline[1].close);
 // console.log(result.data.kline[1].close)
 // console.log(result)
 });
