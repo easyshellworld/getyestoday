@@ -19,10 +19,10 @@ function getfox(){
     $("#coin").append("  USDJPY:"+result.rates.JPY)
   })
   $.getJSON(foxurl+'eur',function(result){
-    $("#coin").append("  USDCNY:"+result.rates.USD)
+    $("#coin").append("  EURUSD:"+result.rates.USD)
   })
   $.getJSON(foxurl+'gbp',function(result){
-    $("#coin").append("  USDCNY:"+result.rates.JPY)
+    $("#coin").append("  GBPJPY:"+result.rates.JPY)
   })
 }
 
